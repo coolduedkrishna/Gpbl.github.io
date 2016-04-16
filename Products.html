@@ -10,8 +10,7 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Photo Stream Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
@@ -26,7 +25,52 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 		});
 	</script>
-<!--endsmothscrolling-->
+	
+
+        <style>
+      
+      @import url(http://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -200%; }
+50% { left: -300%; }
+70% { left: -400%; }
+75% { left: -500%; }
+95% { left: -600%; }
+100% { left: -700%; }
+}
+body, figure { 
+  margin: 0; background:white;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+div#captioned-gallery { 
+  width: 100%; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 800%;
+  font-size: 0; animation: 16s slidy infinite; 
+}
+figure.slider figure { 
+  width: 12.5%; height: 600px;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100%; height: 600px; }
+figure.slider figure figcaption { 
+  position: absolute; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; width: 100%;
+  font-size: 2rem; padding: .6rem; n
+  float:center;
+}
+
+
+    </style>
+
+    
+        
 
 </head>
 <body>
@@ -77,20 +121,42 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="typography-info">
 					<h2>Our Main products</h2>
 				</div>
-				<div> 
-				<img src="images/stock.jpg" class="img-responsive" alt=""/>
-				<h1> We Mainly Focus On </h1>
-				<p> <ul> <li> Black Mustard Seed </li>
-				         <li> Brown Mustard Seed </li>
-						 <li> Cumin Seed (Sounf) </li>
-						 <li> Wheate </li>
-						 <li> Maize </li>
-						 <li> gram Seed </li>
-						 <li> Gum & Guar Seed </li>
-						 <li> Tili (Black & White both)</li>
-					</ul>	 
-				</p>
-			</div>	
+				<div id="captioned-gallery">
+	<figure class="slider">
+		<figure>
+			<img src="C:\Users\DELL\Documents\GitHub\Gpbl.github.io\images\black.jpg"alt>
+			<figcaption style="text-align:center;">Black Mustard</figcaption>
+		</figure>
+		<figure>
+			<img src="C:\Users\DELL\Documents\GitHub\Gpbl.github.io\images\brown.jpg" alt>
+			<figcaption style="text-align:center;">Brown Mustard</figcaption>
+		</figure>
+		<figure>
+			<img src="C:\Users\DELL\Documents\GitHub\Gpbl.github.io\images\jeera.jpg" alt>
+			<figcaption style="text-align:center;">Cumin</figcaption>
+		</figure>
+		<figure>
+			<img src="C:\Users\DELL\Documents\GitHub\Gpbl.github.io\images\wheat1.jpg" alt>
+			<figcaption style="text-align:center;">Wheat</figcaption>
+		</figure>
+		<figure>
+			<img src="C:\Users\DELL\Documents\GitHub\Gpbl.github.io\images\baazra.jpg" alt>
+			<figcaption style="text-align:center;">Maize </figcaption>
+		</figure>
+		<figure>
+			<img src="C:\Users\DELL\Documents\GitHub\Gpbl.github.io\images\chana.jpg" alt>
+			<figcaption style="text-align:center;">Gram Seed</figcaption>
+		</figure>
+		<figure>
+			<img src="C:\Users\DELL\Documents\GitHub\Gpbl.github.io\images\guar.jpg" alt>
+			<figcaption style="text-align:center;">Gum & Guar Seed</figcaption>
+		</figure>
+		<figure>
+			<img src="C:\Users\DELL\Documents\GitHub\Gpbl.github.io\images\tili.jpg" alt>
+			<figcaption style="text-align:center;">Sesame Seed</figcaption>
+		</figure>
+	</figure>
+</div>
 
 					<!--indicate-->
 				<div class="indicate">
